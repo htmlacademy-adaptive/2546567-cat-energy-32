@@ -2,9 +2,223 @@
 /* GLOBAL */
 /* здесь используйте глобальные переменные */
 /* здесь используйте глобальные селекторы img, body, html и так далее */
+body {
+  font-family: "Loto", sans-serif;
+  font-weight: 400;
+}
+
 /* здесь подключите шрифты */
+@font-face {
+  font-family: "$font-family";
+  font-weight: 400;
+  font-style: normal;
+  src: url("styles/$font-crs");
+  font-display: swap;
+}
+@font-face {
+  font-family: "$font-family";
+  font-weight: 400;
+  font-style: normal;
+  src: url("styles/$font-crs");
+  font-display: swap;
+}
 /* BLOCKS */
 .header {
   color: #ffffff;
   padding: 10px 15px;
+}
+
+.nav {
+  display: flex;
+  font-family: "Oswald", sans-serif;
+  font-size: 20px;
+  line-height: 20px;
+  color: #000000;
+}
+
+.program {
+  display: "flex";
+  flex-wrap: "wrap";
+  font-family: "Oswald", sans-serif;
+  color: #000000;
+}
+.program__title {
+  font-size: 24px;
+  line-height: 37px;
+}
+.program__slogan {
+  font-size: 14px;
+  line-height: 18px;
+}
+.program__link {
+  font-size: 16px;
+  line-height: 16px;
+}
+
+.promo {
+  display: "flex";
+  flex-wrap: "wrap";
+  font-family: "Oswald", sans-serif;
+  color: #ffffff;
+}
+.promo__title {
+  font-size: 36px;
+  line-height: 36px;
+}
+.promo__subtitle {
+  font-size: 14px;
+  line-height: 14px;
+  color: #000000;
+}
+.promo__link {
+  font-size: 16px;
+  line-height: 20px;
+  background-color: #68b738;
+  border: none;
+}
+
+.work__title {
+  font-family: "Oswald", sans-serif;
+  font-size: 36px;
+  line-height: 40px;
+  color: #000000;
+}
+.work__description {
+  font-size: 14px;
+  line-height: 18px;
+}
+
+.example {
+  display: "flex";
+  flex-wrap: "wrap";
+  font-family: "Oswald", sans-serif;
+  color: #000000;
+}
+.example__title {
+  font-size: 36px;
+  line-height: 40px;
+}
+.example__subtitle {
+  font-size: 14px;
+  line-height: 18px;
+}
+.example__number {
+  font-size: 24px;
+  line-height: 24px;
+}
+.example__description {
+  font-size: 12px;
+  line-height: 100%;
+}
+.example__count {
+  font-size: 14px;
+  line-height: 29px;
+}
+
+.location {
+  line-height: 20px;
+}
+.location__slogan {
+  font-family: "Oswald", sans-serif;
+  font-size: 16px;
+  color: #111111;
+}
+.location__address {
+  font-size: 14px;
+}
+
+.main__title {
+  font-family: "Oswald", sans-serif;
+  font-size: 60px;
+  line-height: 60px;
+  color: #000000;
+}
+
+.card {
+  font-size: 12px;
+  line-height: 16px;
+}
+.card__title {
+  font-family: "Oswald", sans-serif;
+  font-size: 16px;
+  line-height: 20px;
+  color: #222222;
+}
+.card__product {
+  font-family: "Oswald", sans-serif;
+  font-size: 16px;
+  line-height: 20px;
+  color: #ffffff;
+  background-color: #68b738;
+}
+
+.catalog {
+  font-family: "Oswald", sans-serif;
+  font-size: 16px;
+}
+.catalog__last-item-title {
+  font-size: 20px;
+  line-height: 24px;
+  color: #111111;
+}
+.catalog__last-item-info {
+  line-height: 18px;
+}
+.catalog__last-item-product {
+  line-height: 20px;
+}
+
+.addition {
+  font-size: 16px;
+  line-height: 20px;
+}
+.addition__title {
+  font-family: "Oswald", sans-serif;
+  font-size: 32px;
+  line-height: 32px;
+  color: #000000;
+}
+.addition__item-title {
+  font-family: "Oswald", sans-serif;
+  font-size: 29px;
+  line-height: 20px;
+  color: #222222;
+}
+.addition__item-button {
+  font-family: "Oswald", sans-serif;
+  font-size: 16px;
+  line-height: 20px;
+  color: #ffffff;
+  background-color: #68b738;
+}
+.addition__slogan-text {
+  font-size: 16px;
+  line-height: 20px;
+  color: #ffffff;
+}
+
+.subscribe {
+  font-family: "Oswald", sans-serif;
+  line-height: 32px;
+  color: #000000;
+}
+.subscribe__title {
+  font-size: 32px;
+}
+.subscribe__subtitle {
+  font-size: 24px;
+}
+.subscribe__form__submit {
+  font-size: 20px;
+  line-height: 26px;
+  color: #ffffff;
+}
+
+.form__submit {
+  font-family: "Oswald", sans-serif;
+  font-size: 20px;
+  line-height: 26px;
+  color: #ffffff;
+  background-color: #68b738;
+  border: none;
 }
