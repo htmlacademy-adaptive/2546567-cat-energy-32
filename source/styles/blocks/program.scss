@@ -1,0 +1,21 @@
+.program {
+  display: "flex";
+  flex-wrap: "wrap";
+  font-family: "Oswald", sans-serif;
+  color: #000000;
+
+  &__title {
+    font-size: 24px;
+    line-height: 37px;
+  }
+
+  &__slogan {
+    font-size: 14px;
+    line-height: 18px;
+  }
+
+  &__link {
+    font-size: 16px;
+    line-height: 16px;
+  }
+}

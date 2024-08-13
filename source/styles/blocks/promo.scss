@@ -1,0 +1,25 @@
+.promo {
+  display: "flex";
+  flex-wrap: "wrap";
+  font-family: "Oswald", sans-serif;
+  color: #ffffff;
+
+
+  &__title {
+    font-size: 36px;
+    line-height: 36px;
+  }
+
+  &__subtitle {
+    font-size: 14px;
+    line-height: 14px;
+    color: #000000;
+  }
+
+  &__link {
+    font-size: 16px;
+    line-height: 20px;
+    background-color: $basic-green;
+    border: none;
+  }
+}

@@ -1,0 +1,33 @@
+.addition {
+  font-size: 16px;
+  line-height: 20px;
+
+
+  &__title {
+    font-family: "Oswald", sans-serif;
+    font-size: 32px;
+    line-height: 32px;
+    color: #000000;
+  }
+
+  &__item-title {
+    font-family: "Oswald", sans-serif;
+    font-size: 29px;
+    line-height: 20px;
+    color: #222222;
+  }
+
+  &__item-button {
+    font-family: "Oswald", sans-serif;
+    font-size: 16px;
+    line-height: 20px;
+    color: #ffffff;
+    background-color: $basic-green;
+  }
+
+  &__slogan-text {
+    font-size: 16px;
+    line-height: 20px;
+    color: #ffffff;
+  }
+}

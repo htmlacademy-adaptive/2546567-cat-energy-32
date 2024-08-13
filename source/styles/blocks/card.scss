@@ -1,0 +1,19 @@
+.card {
+  font-size: 12px;
+  line-height: 16px;
+
+  &__title {
+    font-family: "Oswald", sans-serif;
+    font-size: 16px;
+    line-height: 20px;
+    color: #222222;
+  }
+
+  &__product {
+    font-family: "Oswald", sans-serif;
+    font-size: 16px;
+    line-height: 20px;
+    color: #ffffff;
+    background-color: $basic-green;
+  }
+}
