@@ -3,20 +3,33 @@
 /* здесь используйте глобальные переменные */
 /* здесь используйте глобальные селекторы img, body, html и так далее */
 body {
-  font-family: "Loto", sans-serif;
+  font-family: "Lato", sans-serif;
   font-weight: 400;
+}
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
 }
 
 /* здесь подключите шрифты */
 @font-face {
-  font-family: "$font-family";
+  font-family: "Lato";
   font-weight: 400;
   font-style: normal;
   src: url("styles/$font-crs");
   font-display: swap;
 }
 @font-face {
-  font-family: "$font-family";
+  font-family: "oswald";
   font-weight: 400;
   font-style: normal;
   src: url("styles/$font-crs");
@@ -37,39 +50,74 @@ body {
 }
 
 .program {
-  display: "flex";
-  flex-wrap: "wrap";
+  display: flex;
+  flex-wrap: wrap;
   font-family: "Oswald", sans-serif;
   color: #000000;
 }
+
+.program__wrapper {
+  background-image: url("../icons/stack.svg#cat-walking");
+  background-size: 50px 53px;
+  background-repeat: no-repeat;
+  background-position: left;
+}
+
+.program__wrapper--mass {
+  background-image: url("../icons/stack.svg#cat-sitting");
+  background-size: 67px 50px;
+  background-repeat: no-repeat;
+  background-position: left;
+}
+
 .program__title {
   font-size: 24px;
   line-height: 37px;
 }
+
 .program__slogan {
   font-size: 14px;
   line-height: 18px;
 }
+
 .program__link {
   font-size: 16px;
   line-height: 16px;
 }
 
 .promo {
-  display: "flex";
-  flex-wrap: "wrap";
+  display: flex;
+  flex-wrap: wrap;
   font-family: "Oswald", sans-serif;
   color: #ffffff;
+  background-image: url("../images/green-can-mobil@1x.png");
+  background-size: cover;
+  background-repeat: no-repeat;
 }
+@media (min-width: 768px) {
+  .promo {
+    background-image: none;
+  }
+}
+@media (min-width: 1200px) {
+  .promo {
+    background-image: url("../images/green-cat-desktop@1x.png");
+    background-size: 50%;
+    background-position: right;
+  }
+}
+
 .promo__title {
   font-size: 36px;
   line-height: 36px;
 }
+
 .promo__subtitle {
   font-size: 14px;
   line-height: 14px;
   color: #000000;
 }
+
 .promo__link {
   font-size: 16px;
   line-height: 20px;
@@ -83,46 +131,81 @@ body {
   line-height: 40px;
   color: #000000;
 }
+
+.work__item {
+  background-image: url("../icons/stack.svg#plant");
+  background-size: 60px 60px;
+  background-repeat: no-repeat;
+  background-position: left;
+}
+
+.work__item--container {
+  background-image: url("../icons/stack.svg#container");
+  background-size: 60px 60px;
+  background-repeat: no-repeat;
+  background-position: left;
+}
+
+.work__item--fork {
+  background-image: url("../icons/stack.svg#devices");
+  background-size: 60px 60px;
+  background-repeat: no-repeat;
+  background-position: left;
+}
+
+.work__item--clock {
+  background-image: url("../icons/stack.svg#watch");
+  background-size: 60px 60px;
+  background-repeat: no-repeat;
+  background-position: left;
+}
+
 .work__description {
   font-size: 14px;
   line-height: 18px;
 }
 
 .example {
-  display: "flex";
-  flex-wrap: "wrap";
+  display: flex;
+  flex-wrap: wrap;
   font-family: "Oswald", sans-serif;
   color: #000000;
+  font-size: 14px;
 }
+
 .example__title {
   font-size: 36px;
   line-height: 40px;
 }
+
 .example__subtitle {
-  font-size: 14px;
   line-height: 18px;
 }
+
 .example__number {
   font-size: 24px;
   line-height: 24px;
 }
+
 .example__description {
   font-size: 12px;
   line-height: 100%;
 }
+
 .example__count {
-  font-size: 14px;
   line-height: 29px;
 }
 
 .location {
   line-height: 20px;
 }
+
 .location__slogan {
   font-family: "Oswald", sans-serif;
   font-size: 16px;
   color: #111111;
 }
+
 .location__address {
   font-size: 14px;
 }
@@ -135,17 +218,18 @@ body {
 }
 
 .card {
+  font-family: "Oswald", sans-serif;
   font-size: 12px;
   line-height: 16px;
 }
+
 .card__title {
-  font-family: "Oswald", sans-serif;
   font-size: 16px;
   line-height: 20px;
   color: #222222;
 }
+
 .card__product {
-  font-family: "Oswald", sans-serif;
   font-size: 16px;
   line-height: 20px;
   color: #ffffff;
@@ -156,41 +240,76 @@ body {
   font-family: "Oswald", sans-serif;
   font-size: 16px;
 }
+
 .catalog__last-item-title {
   font-size: 20px;
   line-height: 24px;
   color: #111111;
 }
+
 .catalog__last-item-info {
   line-height: 18px;
 }
+
 .catalog__last-item-product {
   line-height: 20px;
 }
 
 .addition {
+  font-family: "Oswald", sans-serif;
   font-size: 16px;
   line-height: 20px;
 }
+
 .addition__title {
-  font-family: "Oswald", sans-serif;
   font-size: 32px;
   line-height: 32px;
   color: #000000;
 }
+
 .addition__item-title {
-  font-family: "Oswald", sans-serif;
   font-size: 29px;
   line-height: 20px;
   color: #222222;
 }
+
 .addition__item-button {
-  font-family: "Oswald", sans-serif;
   font-size: 16px;
   line-height: 20px;
   color: #ffffff;
   background-color: #68b738;
 }
+
+.addition__slogan {
+  display: flex;
+  position: relative;
+  min-height: 100px;
+  background-image: url("../images/cat-backpack-mobil@1x.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.addition__slogan::before {
+  position: absolute;
+  content: "";
+  top: 0;
+  left: 0;
+  width: 50px;
+  height: 50px;
+  background-image: url("../icons/stack.svg#box");
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+@media (min-width: 768px) {
+  .addition__slogan {
+    background-image: url("../images/cat-backpack-tablet@1x.png");
+  }
+}
+@media (min-width: 1200px) {
+  .addition__slogan {
+    background-image: url("../images/cat-backpack-desktop@1x.png");
+  }
+}
+
 .addition__slogan-text {
   font-size: 16px;
   line-height: 20px;
@@ -202,12 +321,15 @@ body {
   line-height: 32px;
   color: #000000;
 }
+
 .subscribe__title {
   font-size: 32px;
 }
+
 .subscribe__subtitle {
   font-size: 24px;
 }
+
 .subscribe__form__submit {
   font-size: 20px;
   line-height: 26px;
@@ -221,4 +343,67 @@ body {
   color: #ffffff;
   background-color: #68b738;
   border: none;
+}
+
+.social__link {
+  display: flex;
+  width: 28px;
+  height: 22px;
+  mask-image: url("../icons/stack.svg#vkontakte");
+  mask-size: 28px 22px;
+  mask-repeat: no-repeat;
+  mask-position: right;
+  background-color: #666666;
+}
+
+.social__link:hover {
+  background-color: #68b738;
+}
+
+.social__link:active {
+  background-color: #68b738;
+  opacity: 0.3;
+}
+
+.social__link--youtube {
+  mask-image: url("../icons/stack.svg#youtube");
+}
+
+.social__link--telegram {
+  mask-image: url("../icons/stack.svg#telegram");
+}
+
+.footer__developer-link {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 168px;
+  height: 37px;
+  cursor: pointer;
+  color: #444444;
+}
+
+.footer__developer-logo {
+  width: 27px;
+  height: 34px;
+  mask-image: url("../icons/stack.svg#html-academy");
+  mask-size: 27px 34px;
+  mask-repeat: no-repeat;
+  mask-position: right;
+  background-color: #666666;
+}
+
+.footer__developer-link:hover .footer__developer-logo {
+  background-color: #68b738;
+}
+
+.footer__developer-link:active .footer__developer-logo {
+  background-color: #68b738;
+  opacity: 0.3;
+}
+
+.footer__list {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
