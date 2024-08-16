@@ -1,18 +1,18 @@
 .catalog {
-  font-family: "Oswald", sans-serif;
+  font-family: $secondary, sans-serif;
   font-size: 16px;
+}
 
-  &__last-item-title {
-    font-size: 20px;
-    line-height: 24px;
-    color: #111111;
-  }
+.catalog__last-item-title {
+  font-size: 20px;
+  line-height: 24px;
+  color: #111111;
+}
 
-  &__last-item-info {
-    line-height: 18px;
-  }
+.catalog__last-item-info {
+  line-height: 18px;
+}
 
-  &__last-item-product {
-    line-height: 20px;
-  }
+.catalog__last-item-product {
+  line-height: 20px;
 }

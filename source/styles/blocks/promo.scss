@@ -1,25 +1,37 @@
 .promo {
-  display: "flex";
-  flex-wrap: "wrap";
-  font-family: "Oswald", sans-serif;
+  display: flex;
+  flex-wrap: wrap;
+  font-family: $secondary, sans-serif;
   color: #ffffff;
+  background-image: url("../../images/green-can-mobil@1x.png");
+  background-size: cover;
+  background-repeat: no-repeat;
 
-
-  &__title {
-    font-size: 36px;
-    line-height: 36px;
+  @media (min-width: 768px) {
+    background-image: none;
   }
 
-  &__subtitle {
-    font-size: 14px;
-    line-height: 14px;
-    color: #000000;
+  @media (min-width: 1200px) {
+    background-image: url("../../images/green-cat-desktop@1x.png");
+    background-size: 50%;
+    background-position: right;
   }
+}
 
-  &__link {
-    font-size: 16px;
-    line-height: 20px;
-    background-color: $basic-green;
-    border: none;
-  }
+.promo__title {
+  font-size: 36px;
+  line-height: 36px;
+}
+
+.promo__subtitle {
+  font-size: 14px;
+  line-height: 14px;
+  color: #000000;
+}
+
+.promo__link {
+  font-size: 16px;
+  line-height: 20px;
+  background-color: $basic-green;
+  border: none;
 }

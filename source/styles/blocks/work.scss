@@ -1,13 +1,39 @@
-.work {
-  &__title {
-    font-family: "Oswald", sans-serif;
-    font-size: 36px;
-    line-height: 40px;
-    color: #000000;
-  }
+.work__title {
+  font-family: $secondary, sans-serif;
+  font-size: 36px;
+  line-height: 40px;
+  color: #000000;
+}
 
-  &__description {
-    font-size: 14px;
-    line-height: 18px;
-  }
+.work__item {
+  background-image: url("../../icons/plant.svg");
+  background-size: 60px 60px;
+  background-repeat: no-repeat;
+  background-position: left;
+}
+
+.work__item--container {
+  background-image: url("../../icons/container.svg");
+  background-size: 60px 60px;
+  background-repeat: no-repeat;
+  background-position: left;
+}
+
+.work__item--fork {
+  background-image: url("../../icons/devices.svg");
+  background-size: 60px 60px;
+  background-repeat: no-repeat;
+  background-position: left;
+}
+
+.work__item--clock {
+  background-image: url("../../icons/watch.svg");
+  background-size: 60px 60px;
+  background-repeat: no-repeat;
+  background-position: left;
+}
+
+.work__description {
+  font-size: 14px;
+  line-height: 18px;
 }

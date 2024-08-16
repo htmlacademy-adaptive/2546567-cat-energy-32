@@ -1,33 +1,59 @@
 .addition {
+  font-family: $secondary, sans-serif;
   font-size: 16px;
   line-height: 20px;
+}
 
+.addition__title {
+  font-size: 32px;
+  line-height: 32px;
+  color: #000000;
+}
 
-  &__title {
-    font-family: "Oswald", sans-serif;
-    font-size: 32px;
-    line-height: 32px;
-    color: #000000;
+.addition__item-title {
+  font-size: 29px;
+  line-height: 20px;
+  color: #222222;
+}
+
+.addition__item-button {
+  font-size: 16px;
+  line-height: 20px;
+  color: #ffffff;
+  background-color: $basic-green;
+}
+
+.addition__slogan {
+  display: flex;
+  position: relative;
+  min-height: 100px;
+  background-image: url("../../images/cat-backpack-mobil@1x.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+
+  &::before {
+    position: absolute;
+    content: "";
+    top: 0;
+    left: 0;
+    width: 50px;
+    height: 50px;
+    background-image: url("../../icons/box.svg");
+    background-size: contain;
+    background-repeat: no-repeat;
   }
 
-  &__item-title {
-    font-family: "Oswald", sans-serif;
-    font-size: 29px;
-    line-height: 20px;
-    color: #222222;
+  @media (min-width: 768px) {
+    background-image: url("../../images/cat-backpack-tablet@1x.png");
   }
 
-  &__item-button {
-    font-family: "Oswald", sans-serif;
-    font-size: 16px;
-    line-height: 20px;
-    color: #ffffff;
-    background-color: $basic-green;
+  @media (min-width: 1200px) {
+    background-image: url("../../images/cat-backpack-desktop@1x.png");
   }
+}
 
-  &__slogan-text {
-    font-size: 16px;
-    line-height: 20px;
-    color: #ffffff;
-  }
+.addition__slogan-text {
+  font-size: 16px;
+  line-height: 20px;
+  color: #ffffff;
 }

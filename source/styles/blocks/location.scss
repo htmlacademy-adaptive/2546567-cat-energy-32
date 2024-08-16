@@ -1,13 +1,13 @@
 .location {
   line-height: 20px;
+}
 
-  &__slogan {
-    font-family: "Oswald", sans-serif;
-    font-size: 16px;
-    color: #111111;
-  }
+.location__slogan {
+  font-family: $secondary, sans-serif;
+  font-size: 16px;
+  color: #111111;
+}
 
-  &__address {
-    font-size: 14px;
-  }
+.location__address {
+  font-size: 14px;
 }

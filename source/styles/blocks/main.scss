@@ -1,8 +1,6 @@
-.main {
-  &__title {
-    font-family: "Oswald", sans-serif;
-    font-size: 60px;
-    line-height: 60px;
-    color: #000000;
-  }
+.main__title {
+  font-family: $secondary, sans-serif;
+  font-size: 60px;
+  line-height: 60px;
+  color: #000000;
 }

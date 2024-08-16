@@ -15,7 +15,12 @@
 <body class="body">
   <header class="header">
     <a class="header__logo-link" href="#">
-      <img class=" header__logo-cat" src="images/logo-mobile.svg" width="33" height="38" alt="кот в костюме летучей мыши,на фоне желтого круга ">
+      <picture>
+        <source media="(min-width: 1440px)" srcset="images/logo-desktop.svg" width="70" height="59" type="image/svg+xml">
+        <source media="(min-width: 768px)" srcset="images/logo-tablet.svg" width="60" height="50" type="image/svg+xml">
+
+        <img class="header__logo-cat" src="images/logo-mobile.svg" width="33" height="38" alt="кот в костюме летучей мыши,на фоне желтого круга">
+      </picture>
       <img class="header__logo-text" src="images/logo-cat-energy.svg" width="101" height="18" alt="Логотип">
     </a>
 
@@ -60,7 +65,7 @@
         <a class="program__link" href="#">каталог slim</a>
       </article>
 
-      <article class="program__wrapper">
+      <article class="program__wrapper program__wrapper--mass">
 
         <h3 class="program__title">НАБОР МАССЫ</h3>
         <p class="program__slogan">Заработать авторитет среди <br> дворовых котов и даже собак? <br> Серия Cat Energy Pro поможет <br> вашему коту нарастить <br> необходимые мышцы!</p>
@@ -150,31 +155,31 @@
 
     <ul class="footer__list social">
       <li class="social__item">
-        <a class="social__link social__link--vkontakte" href="https://vk.com/htmlacademy">
+        <a class="social__link" href="https://vk.com/htmlacademy">
           <span class="visually-hidden">vkontakte</span>
+
         </a>
 
       </li>
       <li class="social__item">
         <a class="social__link social__link--youtube" href="https://www.youtube.com/user/htmlacademyru">
           <span class="visually-hidden">youtube</span>
+
         </a>
 
       </li>
       <li class="social__item">
         <a class="social__link social__link--telegram" href="https://t.me/htmlacademy">
           <span class="visually-hidden">telegram</span>
+
         </a>
 
       </li>
     </ul>
 
-    <a class="footer__developer-logo-text" href="https://htmlacademy.ru/intensive/adaptive">
-
-      <span>HTML Academy</span>
-
-      <img class="footer__developer-logo" src="images/html-academy.svg" width="27" height="34" alt="изображение логотипа академии">
-
+    <a class="footer__developer-link" href="https://htmlacademy.ru/intensive/adaptive">
+      <span class="footer__developer-text">HTML Academy</span>
+      <div class="footer__developer-logo"></div>
     </a>
 
   </footer>

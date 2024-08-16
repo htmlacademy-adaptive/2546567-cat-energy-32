@@ -1,0 +1,40 @@
+.footer__developer-link {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 168px;
+  height: 37px;
+  cursor: pointer;
+  color: $basic-color-text;
+}
+
+.footer__developer-logo {
+  width: 27px;
+  height: 34px;
+
+  mask-image: url("../../icons/html-academy.svg");
+  mask-size: 27px 34px;
+  mask-repeat: no-repeat;
+  mask-position: right;
+
+  background-color: $special_grey-two;
+}
+
+.footer__developer-link:hover {
+  .footer__developer-logo {
+    background-color: $basic_green;
+  }
+}
+
+.footer__developer-link:active {
+  .footer__developer-logo {
+    background-color: $basic_green;
+    opacity: 0.3;
+  }
+}
+
+.footer__list {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
