@@ -1,3 +1,13 @@
+.footer {
+  width: 320px;
+  margin: 0 auto;
+  overflow-x: hidden;
+
+  @media (min-width: $tablet-width) {
+    width: 100%;
+  }
+}
+
 .footer__developer-link {
   display: flex;
   justify-content: space-between;

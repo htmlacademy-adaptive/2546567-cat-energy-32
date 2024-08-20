@@ -1,5 +1,5 @@
 .card {
-  font-family: $secondary, sans-serif;
+  font-family: $secondary;
   font-size: 12px;
   line-height: 16px;
 }
@@ -15,4 +15,17 @@
   line-height: 20px;
   color: #ffffff;
   background-color: $basic-green;
+
+  .card__list {
+    border: #008000 solid 3px;
+  }
+}
+
+.card__item {
+  display: flex;
+  justify-content: space-between;
+  align-items: start;
+  border: #666666 solid 3px;
+  width: 140px;
+  height: 16px;
 }

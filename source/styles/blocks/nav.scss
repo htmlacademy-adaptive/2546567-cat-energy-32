@@ -1,7 +1,73 @@
 .nav {
   display: flex;
-  font-family: $secondary, sans-serif;
+  font-family: $secondary;
   font-size: 20px;
   line-height: 20px;
   color: #000000;
+
+  @media (min-width: $tablet-width) {
+    flex-grow: 1;
+  }
+}
+
+.nav__toggle {
+  position: absolute;
+  content: "";
+  top: 20px;
+  right: 20px;
+  display: flex;
+  width: 24px;
+  height: 24px;
+
+  @media (min-width: $tablet-width) {
+    display: none;
+  }
+}
+
+.nav__list {
+  position: absolute;
+  top: 70px;
+  left: 0;
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  background-color: #ffffff;
+
+  z-index: 1;
+
+  @media (min-width: $tablet-width) {
+    position: initial;
+  }
+}
+
+.nav__item {
+  display: flex;
+  justify-content: space-between;
+  margin-right: 10px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  border-bottom: 1px solid #e6e6e6;
+  width: 100%;
+
+
+  @media (min-width: $tablet-width) {
+    width: auto;
+  }
+}
+
+.nav__link {
+  font-size: 20px;
+  line-height: 20px;
+  color: #000000;
+
+  @media (min-width: $tablet-width) {
+    font-size: 18px;
+  }
+}
+
+.nav__list--hidden {
+  display: none;
 }

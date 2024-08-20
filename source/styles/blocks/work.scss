@@ -1,8 +1,49 @@
+.work {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  margin-left: 20px;
+  padding: 0;
+}
+
+.work__list {
+  display: grid;
+  margin: 0;
+  padding: 0;
+
+  @media (min-width: $tablet-width) {
+    width: 768px;
+    grid-template-columns: 230px 230px;
+    grid-template-rows: 280px 280px;
+    gap: 37px 137px;
+    padding: 0;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 100%;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    row-gap: 94px;
+    padding: 0;
+    height: 280px;
+  }
+}
+
 .work__title {
-  font-family: $secondary, sans-serif;
+  font-family: $secondary;
+  font-weight: 400;
   font-size: 36px;
   line-height: 40px;
   color: #000000;
+  text-align: center;
+
+  @media (min-width: $tablet-width) {
+    font-size: 60px;
+    line-height: 60px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-right: 955px;
+  }
 }
 
 .work__item {
@@ -10,6 +51,15 @@
   background-size: 60px 60px;
   background-repeat: no-repeat;
   background-position: left;
+  list-style: none;
+  padding-left: 80px;
+  background-position-y: 17px;
+
+  @media (min-width: $tablet-width) {
+    padding-left: 0;
+    padding-top: 151px;
+    background-size: 80px 80px;
+  }
 }
 
 .work__item--container {
@@ -17,6 +67,14 @@
   background-size: 60px 60px;
   background-repeat: no-repeat;
   background-position: left;
+  padding-left: 80px;
+  background-position-y: 17px;
+
+  @media (min-width: $tablet-width) {
+    padding-left: 0;
+    padding-top: 151px;
+    background-size: 80px 80px;
+  }
 }
 
 .work__item--fork {
@@ -24,6 +82,14 @@
   background-size: 60px 60px;
   background-repeat: no-repeat;
   background-position: left;
+  padding-left: 80px;
+  background-position-y: 17px;
+
+  @media (min-width: $tablet-width) {
+    padding-left: 0;
+    padding-top: 151px;
+    background-size: 80px 80px;
+  }
 }
 
 .work__item--clock {
@@ -31,9 +97,22 @@
   background-size: 60px 60px;
   background-repeat: no-repeat;
   background-position: left;
+  padding-left: 80px;
+  background-position-y: 17px;
+
+  @media (min-width: $tablet-width) {
+    padding-left: 0;
+    padding-top: 151px;
+    background-size: 80px 80px;
+  }
 }
 
 .work__description {
   font-size: 14px;
   line-height: 18px;
+
+  @media (min-width: $tablet-width) {
+    font-size: 16px;
+    line-height: 24px;
+  }
 }

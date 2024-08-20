@@ -1,17 +1,20 @@
 .promo {
   display: flex;
   flex-wrap: wrap;
-  font-family: $secondary, sans-serif;
+  position: relative;
+  width: 100%;
+  font-family: $secondary;
   color: #ffffff;
   background-image: url("../../images/green-can-mobil@1x.png");
   background-size: cover;
   background-repeat: no-repeat;
+  margin-bottom: 20px;
 
-  @media (min-width: 768px) {
+  @media (min-width: $tablet-width) {
     background-image: none;
   }
 
-  @media (min-width: 1200px) {
+  @media (min-width: $desktop-width) {
     background-image: url("../../images/green-cat-desktop@1x.png");
     background-size: 50%;
     background-position: right;
@@ -19,19 +22,88 @@
 }
 
 .promo__title {
+  font-family: $secondary;
+  font-weight: 400;
   font-size: 36px;
   line-height: 36px;
+  text-align: center;
+  margin-left: 20px;
+  width: 100%;
+
+  @media (min-width: $tablet-width) {
+    color: #000000;
+    font-size: 60px;
+    line-height: 60px;
+    text-align: left;
+    margin-left: 190px;
+  }
+
+  @media (min-width: $desktop-width) {
+    color: #000000;
+  }
 }
 
 .promo__subtitle {
   font-size: 14px;
   line-height: 14px;
-  color: #000000;
+  text-align: center;
+  white-space: nowrap;
+  margin: 0 auto;
+
+  @media (min-width: $tablet-width) {
+    font-size: 20px;
+    line-height: 20px;
+    color: #000000;
+    text-align: center;
+    width: 100%;
+  }
+
+  @media (min-width: $desktop-width) {
+    color: #000000;
+    text-align: left;
+    margin-left: 190px;
+  }
 }
 
 .promo__link {
+  display: flex;
+  margin-left: 20px;
+  place-content: center;
+  font-family: $secondary;
   font-size: 16px;
   line-height: 20px;
   background-color: $basic-green;
+  color: #ffffff;
   border: none;
+  width: 280px;
+  height: 40px;
+  text-align: center;
+  text-decoration: none;
+
+  @media (min-width: $tablet-width) {
+    position: absolute;
+    width: 244px;
+    height: 54px;
+    margin-top: 270px;
+    margin-left: 100px;
+  }
+
+  @media (min-width: $desktop-width) {
+    align-items: center;
+    margin-left: 190px;
+    margin-top: 280px;
+    position: relative;
+    order: 1;
+  }
+}
+
+.promo__image {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+
+  @media (min-width: $desktop-width) {
+    width: 552px;
+    order: 2;
+  }
 }
