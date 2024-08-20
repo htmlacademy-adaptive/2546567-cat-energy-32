@@ -1,0 +1,28 @@
+.main {
+  width: 100%;
+  overflow-x: hidden;
+}
+
+.main__container {
+  position: relative;
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0 auto;
+  width: 320px;
+
+  @media (min-width: $tablet-width) {
+    width: 768px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 1440px;
+    border: 1px solid #008000;
+  }
+}
+
+.main__title {
+  font-family: $secondary;
+  font-size: 60px;
+  line-height: 60px;
+  color: #000000;
+}
