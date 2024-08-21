@@ -3,8 +3,7 @@
   display: flex;
   color: #ffffff;
 
-  width: 320px;
-  margin: 0 auto;
+  width: 100%;
   padding: 13px 20px;
 
 
@@ -20,7 +19,8 @@
 .header__logo-link {
   display: flex;
   align-items: center;
-  width: 217px;
+  justify-content: space-between;
+  width: 50%;
 
   @media (min-width: $tablet-width) {
     width: 174px;
@@ -28,7 +28,7 @@
 }
 
 .header__logo-text {
-  margin-left: 56px;
+  margin-right: -45px;
 
   @media (min-width: $tablet-width) {
     margin-left: 10px;

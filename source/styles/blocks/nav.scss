@@ -26,7 +26,7 @@
 
 .nav__list {
   position: absolute;
-  top: 70px;
+  top: 67px;
   left: 0;
   display: flex;
   flex-wrap: wrap;
@@ -45,7 +45,7 @@
 
 .nav__item {
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
   margin-right: 10px;
   padding-top: 20px;
   padding-bottom: 20px;
@@ -62,6 +62,7 @@
   font-size: 20px;
   line-height: 20px;
   color: #000000;
+  text-decoration: none;
 
   @media (min-width: $tablet-width) {
     font-size: 18px;
