@@ -2,6 +2,7 @@
   font-family: $secondary;
   font-size: 16px;
   line-height: 20px;
+  background-image: center;
 }
 
 .addition__title {
@@ -30,6 +31,10 @@
   background-image: url("../../images/cat-backpack-mobil@1x.png");
   background-size: cover;
   background-repeat: no-repeat;
+  background-image: center;
+  margin: 20px;
+  width: 280px;
+  height: 290px;
 
   &::before {
     position: absolute;
@@ -53,7 +58,10 @@
 }
 
 .addition__slogan-text {
+  font-weight: 400;
   font-size: 16px;
   line-height: 20px;
   color: #ffffff;
+  width: 161px;
+  text-align: center;
 }
