@@ -125,6 +125,7 @@ img {
   left: 0;
   display: flex;
   flex-wrap: wrap;
+  justify-content: end;
   width: 100%;
   list-style: none;
   margin: 0;
@@ -902,45 +903,126 @@ img {
   line-height: 16px;
 }
 
-.card__title {
+.card__description-wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: flex-start;
+  align-content: flex-start;
+  width: 140px;
+}
+
+.card__title-link {
+  text-decoration: none;
+  margin-bottom: 20px;
+}
+
+.card__title-text {
+  display: flex;
+  flex-wrap: wrap;
+  text-align: start;
+  margin: 0;
+  padding: 0;
+  padding-right: 64px;
   font-size: 16px;
   line-height: 20px;
   color: #222222;
 }
 
-.card__product {
+.card__button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  margin: 0;
+  padding: 0;
+  margin-top: 20px;
+  width: 280px;
+  height: 40px;
+  text-decoration: none;
   font-size: 16px;
   line-height: 20px;
   color: #ffffff;
   background-color: #68b738;
 }
-.card__product .card__list {
-  border: #008000 solid 3px;
+
+.card__list {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  margin: 0;
+  padding: 0;
 }
 
 .card__item {
   display: flex;
   justify-content: space-between;
-  align-items: start;
-  border: #666666 solid 3px;
-  width: 140px;
-  height: 16px;
+  flex-wrap: wrap;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+.card__item-label {
+  margin: 0;
+  padding: 0;
+  font-family: "Lato", "Arial", sans-serif;
+}
+
+.card__item-value {
+  margin: 0;
+  padding: 0;
+  font-family: "Lato", "Arial", sans-serif;
+}
+
+.card__image {
+  width: 50%;
 }
 
 .catalog {
   font-family: "Oswald", "Arial", sans-serif;
   font-size: 16px;
+}
+
+.catalog__last-item {
   display: flex;
-  flex-direction: column;
+  flex-wrap: wrap;
+  align-items: center;
+  margin: 0;
+  padding: 24px 20px;
+  width: 100%;
+  border: 2px solid hsl(0, 100%, 50%);
+}
+
+.catalog__list {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  margin: 0;
+  padding: 0;
   background-position: center;
-  /* display: grid;
-  grid-template-columns: 324px 511px;
-  grid-template-rows: max-content;
-  gap: ;
-  grid-column: 1 / 2; */
+}
+
+.catalog__last-item-image {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  margin: 0 auto;
+}
+
+.catalog__item {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: flex-start;
+  justify-content: center;
+  font-family: "Oswald", "Arial", sans-serif;
+  padding: 25px 20px;
+  font-size: 16px;
 }
 
 .catalog__last-item-title {
+  text-align: center;
+  width: 100%;
   font-size: 20px;
   line-height: 24px;
   color: #111111;
@@ -948,16 +1030,38 @@ img {
 
 .catalog__last-item-info {
   line-height: 18px;
+  width: 100%;
+  text-align: center;
 }
 
-.catalog__last-item-product {
+.catalog__last-item-button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  margin: 0;
+  padding: 0;
+  margin-top: 20px;
   line-height: 20px;
+  width: 280px;
+  height: 40px;
+  text-decoration: none;
+  line-height: 20px;
+  color: #444444;
+}
+
+.catalog__last-item-info {
+  font-family: "Lato", "Arial", sans-serif;
+  font-size: 12px;
+  line-height: 16px;
+  color: #444444;
 }
 
 .addition {
   font-family: "Oswald", "Arial", sans-serif;
   font-size: 16px;
   line-height: 20px;
+  background-image: center;
 }
 
 .addition__title {
@@ -986,6 +1090,10 @@ img {
   background-image: url("../images/cat-backpack-mobil@1x.png");
   background-size: cover;
   background-repeat: no-repeat;
+  background-image: center;
+  margin: 20px;
+  width: 280px;
+  height: 290px;
 }
 .addition__slogan::before {
   position: absolute;
@@ -1010,9 +1118,12 @@ img {
 }
 
 .addition__slogan-text {
+  font-weight: 400;
   font-size: 16px;
   line-height: 20px;
   color: #ffffff;
+  width: 161px;
+  text-align: center;
 }
 
 .subscribe {
@@ -1022,11 +1133,13 @@ img {
 }
 
 .subscribe__title {
+  font-weight: 400;
   font-size: 32px;
 }
 
 .subscribe__subtitle {
   font-size: 24px;
+  text-align: center;
 }
 
 .subscribe__form__submit {
