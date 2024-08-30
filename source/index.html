@@ -29,7 +29,7 @@
         <span class="visually-hidden">Меню</span>
       </button>
 
-      <ul class="nav__list nav__list">
+      <ul class="nav__list nav__list--hidden">
         <li class="nav__item nav__item--current">
           <a class="nav__link" href="#">ГЛАВНАЯ</a>
         </li>
@@ -60,21 +60,22 @@
     </section>
 
     <section class="program">
-      <h2 class="visually-hidden">Программы</h2>
-      <article class="program__wrapper">
+      <div class="program-container">
+        <h2 class="visually-hidden">Программы</h2>
+        <article class="program__wrapper">
 
-        <h3 class="program__title">ПОХУДЕНИЕ</h3>
-        <p class="program__slogan">Ваш кот весит больше собаки и почти утратил способность лазить по деревьям? Пора на диету! Cat Energy Slim поможет вашему питомцу сбросить лишний вес.</p>
-        <a class="program__link" href="#">каталог slim</a>
-      </article>
+          <h3 class="program__title">ПОХУДЕНИЕ</h3>
+          <p class="program__slogan">Ваш кот весит больше собаки и почти утратил способность лазить по деревьям? Пора на диету! Cat Energy Slim поможет вашему питомцу сбросить лишний вес.</p>
+          <a class="program__link" href="#">каталог slim</a>
+        </article>
 
-      <article class="program__wrapper program__wrapper--mass">
+        <article class="program__wrapper program__wrapper--mass">
 
-        <h3 class="program__title">НАБОР МАССЫ</h3>
-        <p class="program__slogan">Заработать авторитет среди дворовых котов и даже собак? Серия Cat Energy Pro поможет вашему коту нарастить необходимые мышцы!</p>
-        <a class="program__link" href="#">каталог pro</a>
-      </article>
-
+          <h3 class="program__title">НАБОР МАССЫ</h3>
+          <p class="program__slogan">Заработать авторитет среди дворовых котов и даже собак? Серия Cat Energy Pro поможет вашему коту нарастить необходимые мышцы!</p>
+          <a class="program__link" href="#">каталог pro</a>
+        </article>
+      </div>
     </section>
 
     <section class="work">
@@ -107,36 +108,35 @@
     <section class="example">
       <div class="example__container">
         <h2 class="example__title">Живой пример</h2>
-        <div class="example__description-wrapper">
-          <p class="example__subtitle">Борис сбросил 5 кг за 2 месяца, просто <br> заменив свой обычный корм на Cat Energy <br> Slim. Отличный результат без изнуряющих <br> тренировок! При этом он не менял своих <br> привычек и по-прежнему спит по 16 часов <br> в день. ></p>
 
-          <ul class="example__list">
+        <p class="example__subtitle">Борис сбросил 5 кг за 2 месяца, просто <br> заменив свой обычный корм на Cat Energy <br> Slim. Отличный результат без изнуряющих <br> тренировок! При этом он не менял своих <br> привычек и по-прежнему спит по 16 часов <br> в день. ></p>
 
-            <li class="example__item">
-              <p class="example__number">5 КГ</p>
-              <p class="example__description">снижение веса</p>
-            </li>
+        <ul class="example__list">
 
-            <li class="example__item">
-              <p class="example__number">60 ДНЕЙ</p>
-              <p class="example__description">затрачено времени</p>
-            </li>
-          </ul>
+          <li class="example__item">
+            <p class="example__number">5 КГ</p>
+            <p class="example__description">снижение веса</p>
+          </li>
 
-          <p class="example__count">Затраты на питание: 15 000 РУБ.</p>
-        </div>
-        <div class="example__pictures">
-          <picture class="example__before">
-            <source media="(min-width: 1440px)" width="560" height="512" type="image/jpeg" srcset="images/tablet-before@1x.png 1x, images/tablet-before@2x.png 2x">
-            <source media="(min-width: 768px)" width="768" height="1036" type="image/jpeg" srcset="images/tablet-before@1x.png 1x, images/tablet-before@2x.png 2x">
-            <img src="images/mobile-before@1x.png" width="280" height="256" alt="сидящий полный кот на белом фоне">
-          </picture>
-          <picture class="example__after">
-            <source media="(min-width: 1440px)" width="560" height="512" type="image/jpeg" srcset="images/tablet-after@1x.png 1x, images/tablet-after@2x.png 2x">
-            <source media="(min-width: 768px)" width="768" height="1036" type="image/jpeg" srcset="images/tablet-after@1x.png 1x, images/tablet-after@2x.png 2x">
-            <img src="images/mobile-after@1x.png" width="280" height="256" alt="сидящий стойный полный кот на белом фоне">
-          </picture>
-        </div>
+          <li class="example__item">
+            <p class="example__number">60 ДНЕЙ</p>
+            <p class="example__description">затрачено времени</p>
+          </li>
+        </ul>
+
+        <p class="example__count">Затраты на питание: 15 000 РУБ.</p>
+      </div>
+      <div class="example__pictures">
+        <picture class="example__before">
+          <source media="(min-width: 1440px)" width="560" height="512" type="image/jpeg" srcset="images/tablet-before@1x.png 1x, images/tablet-before@2x.png 2x">
+          <source media="(min-width: 768px)" width="768" height="1036" type="image/jpeg" srcset="images/tablet-before@1x.png 1x, images/tablet-before@2x.png 2x">
+          <img src="images/mobile-before@1x.png" width="280" height="256" alt="сидящий полный кот на белом фоне">
+        </picture>
+        <picture class="example__after">
+          <source media="(min-width: 1440px)" width="560" height="512" type="image/jpeg" srcset="images/tablet-after@1x.png 1x, images/tablet-after@2x.png 2x">
+          <source media="(min-width: 768px)" width="768" height="1036" type="image/jpeg" srcset="images/tablet-after@1x.png 1x, images/tablet-after@2x.png 2x">
+          <img src="images/mobile-after@1x.png" width="280" height="256" alt="сидящий стойный полный кот на белом фоне">
+        </picture>
       </div>
     </section>
 

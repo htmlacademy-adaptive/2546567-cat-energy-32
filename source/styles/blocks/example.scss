@@ -13,7 +13,7 @@
   @media (min-width: $tablet-width) {
     width: 100%;
     padding: 0 30px;
-    background-image: linear-gradient(to bottom, #ffffff 30%, #eaeaea 30% 100%);
+    background-image: linear-gradient(to bottom, #ffffff 50%, #eaeaea 50% 100%);
 
     br {
       display: none;
@@ -21,7 +21,7 @@
   }
 
   @media (min-width: $desktop-width) {
-    background-image: linear-gradient(to bottom, #ffffff 70%, #eaeaea 70% 100%);
+    background-image: linear-gradient(to bottom, #ffffff 25%, #eaeaea 25% 100%);
   }
 }
 
@@ -34,14 +34,15 @@
   font-family: $secondary;
   color: #000000;
   font-size: 14px;
-  padding: 0;
+
 
   @media (min-width: $tablet-width) {
     width: $tablet-width;
+    margin: 0;
   }
 
   @media (min-width: $desktop-width) {
-    width: $desktop-width;
+    width: 50%;
   }
 }
 
@@ -50,33 +51,26 @@
   font-size: 36px;
   line-height: 40px;
   font-weight: 400;
-  margin-left: 20px;
 
   @media (min-width: $tablet-width) {
     width: 100%;
     font-size: 60px;
     line-height: 60px;
   }
-
-  @media (min-width: $desktop-width) {
-    padding-left: 110px;
-  }
 }
 
 .example__subtitle {
   line-height: 18px;
-  margin-left: 20px;
+  font-weight: 400;
+  color: #444444;
 
 
   @media (min-width: $tablet-width) {
     width: 100%;
     font-size: 16px;
     line-height: 24px;
-  }
-
-  @media (min-width: $desktop-width) {
-    padding-left: 110px;
-    padding-right: 250px;
+    margin: 0;
+    margin-bottom: 55px;
   }
 }
 
@@ -85,6 +79,7 @@
   justify-content: space-between;
   gap: 32px;
   width: 100%;
+  height: 70px;
   margin: 0;
   padding: 0;
 
@@ -94,38 +89,56 @@
 }
 
 .example__item {
+  display: flex;
+  flex-wrap: wrap;
   list-style: none;
   width: 124px;
+  border: 1px solid $special_dark-grey;
+  border-radius: 3px;
+  text-align: center;
+  align-items: center;
+
+  @media (min-width: $tablet-width) {
+    width: 162px;
+    border-radius: 3px;
+
+    @media (min-width: $desktop-width) {
+      width: 162px;
+    }
+  }
 }
 
 .example__number {
-  font-size: 12px;
-  line-height: 12px;
-  margin: 0;
+  font-size: 24px;
+  line-height: 24px;
+  margin: 0 auto;
+  width: 100%;
 
   @media (min-width: $tablet-width) {
     font-size: 30px;
     line-height: 37px;
-  }
-
-  @media (min-width: $desktop-width) {
-    width: $desktop-width;
   }
 }
 
 .example__description {
   font-size: 12px;
   line-height: 12px;
-  margin: 0;
+  color: $special_dark-grey;
+  margin: 0 auto;
+  width: 48%;
+  margin-bottom: -20px;
+  background-color: #eaeaea;
 
   @media (min-width: $tablet-width) {
     font-size: 14px;
     line-height: 14px;
+    background-color: #ffffff;
   }
 
   @media (min-width: $desktop-width) {
     font-size: 20px;
     line-height: 20px;
+    background-color: #eaeaea;
   }
 }
 

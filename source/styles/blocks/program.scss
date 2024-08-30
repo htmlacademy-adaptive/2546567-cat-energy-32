@@ -1,4 +1,8 @@
 .program {
+  width: 100%;
+}
+
+.program-container {
   position: relative;
   padding: 0 20px;
   gap: 20px;
@@ -11,10 +15,12 @@
 
   @media (min-width: $tablet-width) {
     width: $tablet-width;
+    gap: 30px;
   }
 
   @media (min-width: $desktop-width) {
     width: $desktop-width;
+    gap: 80px;
     padding: 0 110px;
   }
 }
@@ -46,8 +52,7 @@
     background-size: 100px 106px;
     background-position-x: 11px;
     background-position-y: 71px;
-
-    width: 49%;
+    width: 570px;
   }
 }
 
@@ -71,7 +76,7 @@
       background-size: 134px 100px;
       background-position-x: 11px;
       background-position-y: 71px;
-      width: 49%;
+      width: 570px;
     }
   }
 }

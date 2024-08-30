@@ -1,21 +1,60 @@
 .subscribe {
+  margin: 0 auto;
+  padding: 20px;
   font-family: $secondary;
-  line-height: 32px;
+  line-height: 24px;
+  font-size: 24px;
+  font-weight: 400;
   color: #000000;
+
+
+  @media (min-width: $tablet-width) {
+    width: 768px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 1440px;
+  }
+}
+
+.subscribe__form {
+  @media (min-width: $tablet-width) {
+    display: flex;
+  }
 }
 
 .subscribe__title {
   font-weight: 400;
-  font-size: 32px;
+  line-height: 24px;
+  font-size: 24px;
+
+  @media (min-width: $tablet-width) {
+    width: 768px;
+    line-height: 32px;
+    font-size: 32px;
+  }
+
+  @media (min-width: $desktop-width) {
+    line-height: 40px;
+    font-size: 40px;
+  }
 }
 
 .subscribe__subtitle {
-  font-size: 24px;
   text-align: center;
-}
+  font-size: 16px;
 
-.subscribe__form__submit {
-  font-size: 20px;
-  line-height: 26px;
-  color: #ffffff;
+  @media (min-width: $tablet-width) {
+    width: 768px;
+    text-align: center;
+    font-size: 24px;
+    line-height: 32px;
+    padding: 0 60px;
+  }
+
+  @media (min-width: $desktop-width) {
+    text-align: center;
+    margin: 0 auto;
+    margin-bottom: 24px;
+  }
 }
