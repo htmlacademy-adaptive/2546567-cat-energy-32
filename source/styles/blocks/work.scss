@@ -1,0 +1,143 @@
+.work {
+  position: relative;
+  padding: 0;
+  flex-wrap: wrap;
+  display: flex;
+  width: 320px;
+  margin: 0 auto;
+  margin-bottom: 45px;
+
+
+  @media (min-width: $tablet-width) {
+    width: $tablet-width;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: $desktop-width;
+  }
+}
+
+.work__title {
+  width: 100%;
+  padding-left: 20px;
+  font-family: $secondary;
+  font-weight: 400;
+  font-size: 36px;
+  line-height: 40px;
+  color: #000000;
+
+  @media (min-width: $tablet-width) {
+    font-size: 60px;
+    line-height: 60px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-left: 110px;
+  }
+}
+
+.work__list {
+  width: 100%;
+  display: grid;
+  justify-content: start;
+  margin: 0;
+  padding: 0 20px;
+  grid-template-columns: 1fr;
+  list-style: none;
+
+  @media (min-width: $tablet-width) {
+    width: $tablet-width;
+    grid-template-columns: 230px 230px;
+    gap: 37px 137px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: $desktop-width;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    padding-left: 110px;
+    padding-right: 110px;
+    gap: 94px;
+    height: 280px;
+  }
+}
+
+
+.work__item {
+  background-image: url("../../icons/plant.svg");
+  background-size: 60px 60px;
+  background-repeat: no-repeat;
+  background-position: left;
+  padding-left: 80px;
+  background-position-y: 17px;
+
+  @media (min-width: $tablet-width) {
+    padding-top: 151px;
+    padding-left: 0;
+    background-size: 80px 80px;
+    height: 280px;
+
+    @media (min-width: $desktop-width) {
+      width: 230px;
+      height: 280px;
+    }
+  }
+}
+
+.work__item--container {
+  background-image: url("../../icons/container.svg");
+  background-size: 60px 60px;
+  background-repeat: no-repeat;
+  background-position: left;
+  padding-left: 80px;
+  background-position-y: 17px;
+
+  @media (min-width: $tablet-width) {
+    padding-left: 0;
+    height: 280px;
+    padding-top: 151px;
+    background-size: 80px 80px;
+  }
+}
+
+.work__item--fork {
+  background-image: url("../../icons/devices.svg");
+  background-size: 60px 60px;
+  background-repeat: no-repeat;
+  background-position: left;
+  padding-left: 80px;
+  background-position-y: 17px;
+
+  @media (min-width: $tablet-width) {
+    padding-left: 0;
+    height: 280px;
+    padding-top: 151px;
+    background-size: 80px 80px;
+  }
+}
+
+.work__item--clock {
+  background-image: url("../../icons/watch.svg");
+  background-size: 60px 60px;
+  background-repeat: no-repeat;
+  background-position: left;
+  padding-left: 80px;
+  background-position-y: 17px;
+
+  @media (min-width: $tablet-width) {
+    padding-left: 0;
+    height: 280px;
+    background-size: 80px 80px;
+  }
+}
+
+.work__description {
+  text-align: start;
+  font-size: 14px;
+  line-height: 18px;
+
+  @media (min-width: $tablet-width) {
+    padding-bottom: 51px;
+    font-size: 16px;
+    line-height: 24px;
+  }
+}

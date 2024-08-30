@@ -1,5 +1,38 @@
 .header {
-  background-color: #663399;
+  position: relative;
+  display: flex;
   color: #ffffff;
-  padding: 10px 15px;
+
+  width: 100%;
+  padding: 13px 20px;
+
+
+  @media (min-width: $tablet-width) {
+    width: 100%;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 100%;
+    position: absolute;
+    z-index: 1;
+  }
+}
+
+.header__logo-link {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 50%;
+
+  @media (min-width: $tablet-width) {
+    width: 174px;
+  }
+}
+
+.header__logo-text {
+  margin-right: -45px;
+
+  @media (min-width: $tablet-width) {
+    margin-left: 10px;
+  }
 }

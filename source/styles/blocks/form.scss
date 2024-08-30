@@ -1,0 +1,46 @@
+.form__submit {
+  width: 100%;
+  height: 56px;
+  font-family: $secondary;
+  font-size: 20px;
+  line-height: 26px;
+  font-weight: 400;
+  color: #ffffff;
+  background-color: $basic-green;
+  border: none;
+
+  @media (min-width: $tablet-width) {
+    width: 40%;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 469px;
+    height: 56px;
+  }
+}
+
+
+.form__input {
+  display: flex;
+  width: 100%;
+  height: 56px;
+  padding: 13px;
+  border: 2px solid #cdcdcd;
+  margin-bottom: 13px;
+  font-family: $secondary;
+  font-size: 20px;
+  line-height: auto;
+  font-weight: 400;
+  color: #444444;
+
+  @media (min-width: $tablet-width) {
+    margin-left: 68px;
+    width: 40%;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 256px;
+    height: 56px;
+    margin-left: 344px;
+  }
+}

@@ -1,7 +1,22 @@
 /* GLOBAL */
-@import "./common/variables.scss";
+@import "./common/variables";
+@import "./common/mixins.scss";
 @import "./common/global.scss";
 @import "./common/fonts.scss";
 
 /* BLOCKS */
 @import "./blocks/header.scss";
+@import "./blocks/nav.scss";
+@import "./blocks/program.scss";
+@import "./blocks/promo.scss";
+@import "./blocks/work.scss";
+@import "./blocks/example.scss";
+@import "./blocks/location.scss";
+@import "./blocks/main.scss";
+@import "./blocks/card.scss";
+@import "./blocks/catalog.scss";
+@import "./blocks/addition.scss";
+@import "./blocks/subscribe.scss";
+@import "./blocks/form.scss";
+@import "./blocks/social.scss";
+@import "./blocks/footer.scss";
