@@ -1,0 +1,44 @@
+.main {
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+  justify-content: center;
+  overflow: hidden;
+}
+
+.main__title-wrapper {
+  width: 320px;
+
+  @media (min-width: $tablet-width) {
+    width: 768px;
+    padding-left: 10px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 1440px;
+    padding-top: 163px;
+    padding-left: 90px;
+  }
+}
+
+.main__title {
+  width: 100%;
+  margin: 0;
+  padding: 29px 20px 39px;
+  font-family: $secondary;
+  font-weight: 400;
+  font-size: 36px;
+  line-height: 36px;
+  color: #000000;
+
+  @media (min-width: $tablet-width) {
+    margin: 0 auto;
+    font-size: 60px;
+    line-height: 60px;
+    padding-top: 25px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 56px;
+  }
+}
