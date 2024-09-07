@@ -10,11 +10,11 @@
   border: none;
 
   @media (min-width: $tablet-width) {
-    width: 40%;
+    width: 256px;
   }
 
   @media (min-width: $desktop-width) {
-    width: 469px;
+    width: 256px;
     height: 56px;
   }
 }
@@ -26,7 +26,8 @@
   height: 56px;
   padding: 13px;
   border: 2px solid #cdcdcd;
-  margin-bottom: 13px;
+  margin-bottom: 16px;
+  text-transform: uppercase;
   font-family: $secondary;
   font-size: 20px;
   line-height: auto;
@@ -34,13 +35,12 @@
   color: #444444;
 
   @media (min-width: $tablet-width) {
-    margin-left: 68px;
-    width: 40%;
+    width: 376px;
   }
 
   @media (min-width: $desktop-width) {
-    width: 256px;
+    width: 496px;
     height: 56px;
-    margin-left: 344px;
+    margin-left: 233px;
   }
 }

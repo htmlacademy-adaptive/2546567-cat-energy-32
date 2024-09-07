@@ -1,15 +1,20 @@
 .footer {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
   margin: 0 auto;
   overflow-x: hidden;
   list-style: none;
-  padding: 20px;
+  padding: 23px 20px;
   width: 100%;
+  cursor: pointer;
 
   @media (min-width: $tablet-width) {
     display: flex;
     flex-wrap: nowrap;
     justify-content: space-between;
     align-items: center;
+    padding: 55px 31px;
   }
 
   @media (min-width: $desktop-width) {
@@ -17,6 +22,7 @@
     flex-wrap: nowrap;
     justify-content: space-between;
     align-items: center;
+    padding: 65px 110px;
   }
 }
 
@@ -24,11 +30,18 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  margin-top: 40px;
+  width: 100%;
+  padding-bottom: 18px;
+  padding-top: 18px;
+  border-bottom: 1px solid #d9d9d9;
 
   @media (min-width: $tablet-width) {
     justify-content: flex-start;
+    align-items: start;
+    width: 128px;
     margin: 0;
+    padding: 0;
+    border: none;
   }
 }
 
@@ -36,12 +49,32 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
+  width: 100%;
+  padding-top: 37px;
   height: 37px;
   cursor: pointer;
   color: $basic-color-text;
+  border-top: 1px solid #d9d9d9;
+  text-decoration: none;
 
   @media (min-width: $tablet-width) {
-    width: 168px;
+    padding: 0;
+    width: 163px;
+    border: none;
+  }
+}
+
+
+.footer__developer-link:hover {
+  .footer__developer-logo {
+    background-color: $basic_green;
+  }
+}
+
+.footer__developer-link:active {
+  .footer__developer-logo {
+    background-color: $basic_green;
+    opacity: 0.3;
   }
 }
 
@@ -57,29 +90,18 @@
   background-color: $special_grey-two;
 }
 
-.footer__developer-link:hover {
-  .footer__developer-logo {
-    background-color: $basic_green;
-  }
-}
-
-.footer__developer-link:active {
-  .footer__developer-logo {
-    background-color: $basic_green;
-    opacity: 0.3;
-  }
-}
-
 .footer__list {
   display: flex;
   justify-content: space-between;
-  margin: 40px 54px;
+  gap: 24px;
   padding: 0;
+  padding-top: 3px;
+  padding-bottom: 4px;
   list-style: none;
 
   @media (min-width: $tablet-width) {
     margin: 0 auto;
-    width: 132px;
+    width: 99px;
     justify-content: space-between;
   }
 }

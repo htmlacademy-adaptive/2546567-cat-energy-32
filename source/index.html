@@ -6,7 +6,6 @@
   <title>Cat energy</title>
   <meta name="viewport" content="width=device-width,initial-scale=1">
   <link rel="icon" href="favicons/favicon.ico">
-  <!-- <link rel="manifest" href="favicons/manifest.webmanifest"> -->
   <link rel="stylesheet" href="styles/styles.css">
   <script src="scripts/index.js" defer></script>
 </head>
@@ -24,14 +23,14 @@
       <img class="header__logo-text" src="images/logo-cat-energy.svg" width="101" height="18" alt="Логотип">
     </a>
 
-    <nav class="header__nav nav">
+    <nav class="header__nav nav nav--nojs nav--closed">
       <button class="nav__toggle" type="button">
         <span class="visually-hidden">Меню</span>
       </button>
 
-      <ul class="nav__list nav__list--hidden">
-        <li class="nav__item nav__item--current">
-          <a class="nav__link" href="#">ГЛАВНАЯ</a>
+      <ul class="nav__list">
+        <li class="nav__item nav__item--active">
+          <a class="nav__link" href="index.html">ГЛАВНАЯ</a>
         </li>
         <li class="nav__item">
           <a class="nav__link" href="catalog.html">КАТАЛОГ ПРОДУКЦИИ</a>
@@ -71,9 +70,9 @@
 
         <article class="program__wrapper program__wrapper--mass">
 
-          <h3 class="program__title">НАБОР МАССЫ</h3>
+          <h3 class="program__title program__title--mass">НАБОР МАССЫ</h3>
           <p class="program__slogan">Заработать авторитет среди дворовых котов и даже собак? Серия Cat Energy Pro поможет вашему коту нарастить необходимые мышцы!</p>
-          <a class="program__link" href="#">каталог pro</a>
+          <a class="program__link program__link--mass" href="#">каталог pro</a>
         </article>
       </div>
     </section>
@@ -100,43 +99,44 @@
         </li>
 
         <li class="work__item work__item--clock">
-          <p class="work__description">Уже через месяц <br> наслаждайтесь изменениями <br> к лучшему вашего питомца!</p>
+          <p class="work__description">Уже через месяц наслаждайтесь изменениями к лучшему <br> вашего питомца!</p>
         </li>
       </ul>
     </section>
 
     <section class="example">
       <div class="example__container">
-        <h2 class="example__title">Живой пример</h2>
+        <div class="example__left-block">
 
-        <p class="example__subtitle">Борис сбросил 5 кг за 2 месяца, просто <br> заменив свой обычный корм на Cat Energy <br> Slim. Отличный результат без изнуряющих <br> тренировок! При этом он не менял своих <br> привычек и по-прежнему спит по 16 часов <br> в день. ></p>
-
-        <ul class="example__list">
-
-          <li class="example__item">
-            <p class="example__number">5 КГ</p>
-            <p class="example__description">снижение веса</p>
-          </li>
-
-          <li class="example__item">
-            <p class="example__number">60 ДНЕЙ</p>
-            <p class="example__description">затрачено времени</p>
-          </li>
-        </ul>
-
-        <p class="example__count">Затраты на питание: 15 000 РУБ.</p>
-      </div>
-      <div class="example__pictures">
-        <picture class="example__before">
-          <source media="(min-width: 1440px)" width="560" height="512" type="image/jpeg" srcset="images/tablet-before@1x.png 1x, images/tablet-before@2x.png 2x">
-          <source media="(min-width: 768px)" width="768" height="1036" type="image/jpeg" srcset="images/tablet-before@1x.png 1x, images/tablet-before@2x.png 2x">
-          <img src="images/mobile-before@1x.png" width="280" height="256" alt="сидящий полный кот на белом фоне">
-        </picture>
-        <picture class="example__after">
-          <source media="(min-width: 1440px)" width="560" height="512" type="image/jpeg" srcset="images/tablet-after@1x.png 1x, images/tablet-after@2x.png 2x">
-          <source media="(min-width: 768px)" width="768" height="1036" type="image/jpeg" srcset="images/tablet-after@1x.png 1x, images/tablet-after@2x.png 2x">
-          <img src="images/mobile-after@1x.png" width="280" height="256" alt="сидящий стойный полный кот на белом фоне">
-        </picture>
+          <h2 class="example__title">Живой пример</h2>
+          <p class="example__subtitle">Борис сбросил 5 кг за 2 месяца, просто <br> заменив свой обычный корм на Cat Energy <br> Slim. Отличный результат без изнуряющих <br> тренировок! При этом он не менял своих <br> привычек и по-прежнему спит по 16 часов <br> в день.</p>
+          <ul class="example__list">
+            <li class="example__item">
+              <p class="example__number">5 КГ</p>
+              <p class="example__description">снижение веса</p>
+            </li>
+            <li class="example__item">
+              <p class="example__number">60 ДНЕЙ</p>
+              <p class="example__description">затрачено времени</p>
+            </li>
+          </ul>
+          <div class="example__count-wrapper">
+            <p class="example__count">Затраты на питание:</p>
+            <p class="example__count example__count--price">15 000 РУБ.</p>
+          </div>
+        </div>
+        <div class="example__pictures">
+          <picture class="example__before">
+            <source media="(min-width: 1440px)" width="560" height="512" type="image/jpeg" srcset="images/tablet-before@1x.png 1x, images/tablet-before@2x.png 2x">
+            <source media="(min-width: 768px)" width="560" height="512" type="image/jpeg" srcset="images/tablet-before@1x.png 1x, images/tablet-before@2x.png 2x">
+            <img src="images/mobile-before@1x.png" width="280" height="256" alt="сидящий полный кот на белом фоне">
+          </picture>
+          <picture class="example__after">
+            <source media="(min-width: 1440px)" width="560" height="512" type="image/jpeg" srcset="images/tablet-after@1x.png 1x, images/tablet-after@2x.png 2x">
+            <source media="(min-width: 768px)" width="560" height="512" type="image/jpeg" srcset="images/tablet-after@1x.png 1x, images/tablet-after@2x.png 2x">
+            <img src="images/mobile-after@1x.png" width="280" height="256" alt="сидящий стойный полный кот на белом фоне">
+          </picture>
+        </div>
       </div>
     </section>
 
@@ -145,23 +145,17 @@
         <h3 class="location__slogan">ПРИГЛАШАЕМ <br> К СОТРУДНИЧЕСТВУ <br> ДИЛЕРОВ!</h3>
         <div class="location__address-wrapper">
           <p class="location__address">ул. Большая <br> Конюшенная, д. 19/8</p>
-          <p class="location__address">Санкт-Петербург</p>
+          <p class="location__address location__address--town">Санкт-Петербург</p>
         </div>
       </div>
-      <picture class="location__map">
-        <source media="(min-width: 1440px)" width="1440" height="400" type="image/jpeg" srcset="images/location-desktop@1x.jpg 1x, images/location-desktop@2x.jpg 2x">
-        <source media="(min-width: 768px)" width="768" height="400" type="image/jpeg" srcset="images/location-tablet@1x.jpg 1x, images/location-tablet@2x.jpg 2x">
-
-        <img src="images/location@1x.jpg" width="320" height="362" alt="карта города с указателем местонахождения магазина в виде кота в костюме летучей мыши">
-      </picture>
-
+      <iframe class="location__map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.6036257198161!2d30.32047247732076!3d59.93871916209359!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca145cc1%3A0x42b32648d8238007!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LzgsINCh0LDQvdC60YIt0J_QtdGC0LXRgNCx0YPRgNCzLCAxOTExODY!5e0!3m2!1sru!2sru!4v1725082969036!5m2!1sru!2sru" width="320" height="362" allowfullscreen="" title="карта города с указателем местонахождения магазина в виде кота в костюме летучей мыши"></iframe>
     </section>
 
   </main>
 
   <footer class="footer">
     <a class="footer__logo" href="index.html">
-      <img src="images/logo-cat-energy.svg" width="101" height="18" alt="логотип компании">
+      <img src="images/logo-cat-energy.svg" width="128" height="24" alt="логотип компании">
     </a>
 
     <ul class="footer__list social">

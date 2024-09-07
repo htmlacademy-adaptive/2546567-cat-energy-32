@@ -16,11 +16,14 @@ body {
   font-family: $primary;
   font-weight: 400;
   $basic-color-text:#444444;
+
+  @media (min-width: $desktop-width) {
+    grid-template-rows: 1fr min-content;
+  }
 }
 
 img {
   max-width: 100%;
-  height: auto;
   object-fit: contain;
 }
 
