@@ -71,13 +71,21 @@
   text-decoration: none;
   font-size: 16px;
   line-height: 20px;
-  color: #ffffff;
+  color: $basic_white;
   background-color: $basic-green;
 
   @media (min-width: $tablet-width) {
     width: 250px;
     margin: 0 auto;
   }
+}
+
+.card__button:hover {
+  opacity: 0.6;
+}
+
+.card__button:active {
+  opacity: 0.3;
 }
 
 .card__list {

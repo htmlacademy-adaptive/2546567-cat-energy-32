@@ -14,7 +14,7 @@
     flex-wrap: nowrap;
     justify-content: space-between;
     align-items: center;
-    padding: 55px 31px;
+    padding: 35px 31px;
   }
 
   @media (min-width: $desktop-width) {
@@ -25,6 +25,7 @@
     padding: 65px 110px;
   }
 }
+
 
 .footer__logo {
   display: flex;
@@ -43,6 +44,14 @@
     padding: 0;
     border: none;
   }
+}
+
+.footer__logo:hover {
+  opacity: 0.6;
+}
+
+.footer__logo:active {
+  opacity: 0.3;
 }
 
 .footer__developer-link {

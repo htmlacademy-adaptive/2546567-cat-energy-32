@@ -38,14 +38,16 @@
 
   @media (min-width: $tablet-width) {
     width: 768px;
+    margin-bottom: 68px;
   }
 
   @media (min-width: $desktop-width) {
     align-items: center;
     align-content: center;
     text-align: center;
-    margin: 0;
     width: 896px;
+    margin: 0;
+    border-top: 1px solid #cdcdcd;
   }
 }
 
@@ -65,11 +67,9 @@
   }
 
   @media (min-width: $desktop-width) {
-    justify-content: center;
+    justify-content: flex-start;
     text-align: center;
-    padding-left: 0;
-    padding-right: 0;
-    padding-bottom: 5px;
+    padding: 15px 0 16px;
     border: none;
     border-bottom: 1px solid #cdcdcd;
   }
@@ -81,64 +81,22 @@
   justify-content: center;
   width: 100%;
   margin-bottom: 35px;
-  background-color: #ffffff;
-
-  &::before {
-    position: absolute;
-    width: 2000px;
-    height: 2px;
-    top: 45px;
-    left: -2040px;
-    content: "";
-    background-color: #68b738;
-  }
-
-  &::after {
-    position: absolute;
-    width: 2000px;
-    height: 2px;
-    top: 39px;
-    left: 200px;
-    content: "";
-    background-color: #68b738;
-  }
-
-  @media (min-width: $tablet-width) {
-    margin-bottom: 45px;
-
-    &::before {
-      left: -2000px;
-      top: 39px;
-    }
-
-    &::after {
-      left: 411px;
-    }
-  }
+  background-color: $basic_white;
 
   @media (min-width: $desktop-width) {
-    margin-bottom: 34px;
-
-    &::before {
-      left: -1930px;
-      top: 87px;
-    }
-
-    &::after {
-      left: 526px;
-      top: 87px;
-    }
+    margin-bottom: 47px;
   }
 }
 
 
 .addition__title {
+  position: relative;
   padding: 0;
   margin: 0;
   width: 320px;
   font-size: 24px;
   line-height: 24px;
-  color: #000000;
+  color: $basic_black;
   font-weight: 400;
 
   @media (min-width: $tablet-width) {
@@ -154,6 +112,54 @@
     padding-left: 0;
     font-size: 40px;
     line-height: 40px;
+  }
+
+  &::before {
+    position: absolute;
+    width: 2000px;
+    height: 2px;
+    top: 10px;
+    left: -2040px;
+    content: "";
+    background-color: #68b738;
+  }
+
+  &::after {
+    position: absolute;
+    width: 2000px;
+    height: 2px;
+    top: 10px;
+    left: 266px;
+    content: "";
+    background-color: #68b738;
+  }
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 45px;
+
+    &::before {
+      left: -2000px;
+      top: 14px;
+    }
+
+    &::after {
+      top: 14px;
+      left: 381px;
+    }
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 34px;
+
+    &::before {
+      left: -2040px;
+      top: 20px;
+    }
+
+    &::after {
+      left: 416px;
+      top: 20px;
+    }
   }
 }
 
@@ -180,6 +186,7 @@
     justify-content: flex-start;
     align-items: center;
     margin: 0;
+    margin-right: 164px;
     text-align: center;
     font-size: 20px;
     line-height: 20px;
@@ -200,12 +207,13 @@
   @media (min-width: $tablet-width) {
     display: flex;
     flex-wrap: wrap;
-    text-align: center;
+    text-align: end;
     align-items: flex-start;
+    justify-content: flex-end;
     font-size: 16px;
     line-height: 20px;
     width: 172px;
-    margin-left: 164px;
+    margin-left: 0;
     padding-top: 2px;
   }
 
@@ -252,7 +260,7 @@
   height: 40px;
   font-size: 16px;
   line-height: 20px;
-  color: #ffffff;
+  color: $basic_white;
   background-color: $basic-green;
   text-decoration: none;
 
@@ -268,9 +276,18 @@
 }
 
 
+.addition__item-button:hover {
+  opacity: 0.6;
+}
+
+.addition__item-button:active {
+  opacity: 0.3;
+}
+
+
 .addition__slogan {
-  display: flex;
   position: relative;
+  display: flex;
   width: 100%;
   padding-top: 34px;
   min-height: 290px;
@@ -283,7 +300,8 @@
     position: absolute;
     content: "";
     top: 93px;
-    left: 101px;
+    left: 50%;
+    transform: translateX(-50%);
     width: 78px;
     height: 80px;
     background-image: url("../../icons/box.svg");
@@ -298,12 +316,11 @@
     background-image: url("../../images/cat-backpack-tablet@1x.png");
     min-height: 200px;
     background-size: 707px 200px;
-    margin-top: 11px;
     padding: 0;
 
     &::before {
       top: 59px;
-      left: 79px;
+      left: 120px;
     }
   }
 
@@ -316,19 +333,19 @@
 
     &::before {
       top: 56px;
-      left: 84px;
+      left: 120px;
     }
   }
 }
 
 .addition__slogan-text {
-  margin: 187px 61px 43px 58px;
+  width: 161px;
+  margin: 187px auto 43px;
   font-family: $primary;
   font-weight: 400;
   font-size: 16px;
   line-height: 20px;
-  color: #ffffff;
-  width: 161px;
+  color: $basic_white;
   text-align: center;
 
   @media (min-width: $tablet-width) {

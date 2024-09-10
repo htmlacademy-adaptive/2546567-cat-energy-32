@@ -5,7 +5,7 @@
   font-size: 20px;
   line-height: 26px;
   font-weight: 400;
-  color: #ffffff;
+  color: $basic_white;
   background-color: $basic-green;
   border: none;
 
@@ -17,6 +17,14 @@
     width: 256px;
     height: 56px;
   }
+}
+
+.form__submit:hover {
+  opacity: 0.6;
+}
+
+.form__submit:active {
+  opacity: 0.3;
 }
 
 
