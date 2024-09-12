@@ -1,0 +1,240 @@
+.catalog {
+  font-family: $secondary;
+  font-size: 16px;
+
+  @media (min-width: $tablet-width) {
+    width: 768px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 1440px;
+  }
+}
+
+
+.catalog__list {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  margin: 0 auto;
+  padding: 0;
+  background-position: center;
+
+  @media (min-width: $tablet-width) {
+    display: grid;
+    grid-template-columns: 324px 324px;
+    align-items: end;
+    gap: 45px 60px;
+    width: 768px;
+    margin: 0 auto;
+    margin-bottom: 19px;
+    padding: 30px;
+  }
+
+  @media (min-width: $desktop-width) {
+    display: grid;
+    grid-template-columns: 245px 245px 245px 245px;
+    align-items: end;
+    gap: 75px 80px;
+    width: 100%;
+    margin: 0;
+    padding: 0 109px;
+  }
+}
+
+.catalog__item {
+  position: relative;
+  display: flex;
+  flex-wrap: wrap;
+  width: 320px;
+  margin: 0 auto;
+  align-items: flex-start;
+  justify-content: center;
+  font-family: $secondary;
+  padding: 23px 20px;
+  padding-bottom: 24px;
+  font-size: 16px;
+
+  &::before {
+    position: absolute;
+    content: "";
+    top: 0;
+    left: -500px;
+    width: 1000px;
+    height: 1px;
+    background-color: $basic_grey;
+  }
+
+  @media (min-width: $tablet-width) {
+    background-image: linear-gradient(to bottom, $basic_white 18%, $basic_grey 18% 100%);
+    border: none;
+    align-content: flex-start;
+    min-height: 511px;
+    padding-bottom: 40px;
+
+    &::before {
+      display: none;
+    }
+  }
+
+  @media (min-width: $desktop-width) {
+    align-content: flex-start;
+    width: 100%;
+    min-height: 500px;
+    padding: 0 38px;
+    background-image: linear-gradient(to bottom, $basic_white 14%, $basic_grey 14% 100%);
+    border: none;
+  }
+}
+
+.catalog__last-item {
+  position: relative;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  margin: 0 auto;
+  padding: 26px 20px;
+  padding-bottom: 24px;
+  width: 320px;
+
+  &::before {
+    position: absolute;
+    content: "";
+    top: 0;
+    left: -500px;
+    width: 1000px;
+    height: 1px;
+    background-color: $special_grey-light;
+  }
+
+  &::after {
+    position: absolute;
+    content: "";
+    bottom: 0;
+    left: -500px;
+    width: 1000px;
+    height: 1px;
+    background-color: $special_grey-light;
+  }
+
+
+  @media (min-width: $tablet-width) {
+    align-items: flex-start;
+    align-content: flex-start;
+    min-height: 428px;
+    padding-top: 48px;
+    border: 1px solid $basic_grey;
+
+    &::after,
+    &::before {
+      display: none;
+    }
+  }
+
+  @media (min-width: $desktop-width) {
+    height: 431px;
+    padding: 47px 33px 40px;
+    width: 245px;
+  }
+}
+
+.catalog__last-item-image {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  margin: 0 auto;
+
+  @media (min-width: $tablet-width) {
+    width: 60px;
+    height: 60px;
+    align-items: flex-start;
+  }
+}
+
+
+.catalog__last-item-title {
+  text-align: center;
+  width: 100%;
+  margin-top: 24px;
+  margin-bottom: 8px;
+  font-size: 16px;
+  line-height: 20px;
+  color: #111111;
+  font-weight: 400;
+  text-transform: uppercase;
+
+  @media (min-width: $tablet-width) {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 51px 52px 23px;
+    font-size: 20px;
+    line-height: 24px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin: 0;
+    padding: 41px 0 26px;
+  }
+}
+
+.catalog__last-item-info {
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  text-align: center;
+  font-family: $primary;
+  font-size: 12px;
+  line-height: 16px;
+  color: $special_dark-grey-two;
+
+  @media (min-width: $tablet-width) {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0 50px 83px 49px;
+    font-size: 16px;
+    line-height: 18px;
+    color: #444444;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin: 0;
+    padding-bottom: 90px;
+  }
+}
+
+.catalog__last-item-button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  vertical-align: center;
+  margin: 0 auto;
+  padding: 0;
+  width: 280px;
+  height: 40px;
+  margin-top: 21px;
+  text-decoration: none;
+  background-color: $basic_grey;
+  line-height: 20px;
+  color: $special_dark-grey-two;
+
+  @media (min-width: $tablet-width) {
+    width: 250px;
+    padding: 0;
+    margin: 0;
+    margin-left: 15px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 169px;
+    margin: 0 auto;
+  }
+}
+
+.catalog__last-item-button:hover {
+  opacity: 0.6;
+}
+
+.catalog__last-item-button:active {
+  opacity: 0.3;
+}
