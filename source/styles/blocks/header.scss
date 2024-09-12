@@ -5,20 +5,23 @@
   align-items: flex-start;
   color: $basic_white;
 
-  width: 100%;
+  width: 320px;
+  margin: 0 auto;
   padding: 12px 20px;
 
 
   @media (min-width: $tablet-width) {
-    width: 100%;
+    width: $tablet-width;
     align-items: center;
     justify-content: space-between;
-    padding: 21px 30px 32px;
+    padding: 19px 30px 32px;
   }
 
   @media (min-width: $desktop-width) {
-    width: 100%;
+    width: $desktop-width;
     position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
     background-color: transparent;
     z-index: 1;
     padding-left: 110px;

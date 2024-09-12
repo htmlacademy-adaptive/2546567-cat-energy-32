@@ -5,6 +5,7 @@
   justify-content: center;
   width: 100%;
   line-height: 20px;
+  background-color: $basic_grey;
 
   &::before {
     background-image: url("../../icons/marker.svg");
@@ -17,17 +18,21 @@
     background-size: contain;
     background-repeat: no-repeat;
     z-index: 1000;
+  }
 
-    @media (min-width: $tablet-width) {
+  @media (min-width: $tablet-width) {
+    &::before {
       width: 113px;
       height: 106px;
       top: 57.6%;
       left: calc(50% - 50px);
     }
+  }
 
-    @media (min-width: $desktop-width) {
-      top: 33%;
-      left: calc(65% - 29px);
+  @media (min-width: $desktop-width) {
+    &::before {
+      top: 25%;
+      left: calc(48% - 27px);
     }
   }
 }
@@ -91,7 +96,7 @@
   }
 
   @media (min-width: $desktop-width) {
-    padding-top: 16px;
+    padding-top: 0;
   }
 }
 

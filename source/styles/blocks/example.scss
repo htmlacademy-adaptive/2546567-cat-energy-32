@@ -14,8 +14,8 @@
     width: 100%;
     padding: 0 30px;
     padding-top: 48px;
-    padding-bottom: 80px;
-    background-image: linear-gradient(to bottom, $basic_white 56.5%, $special_grey-light 56.5% 100%);
+    padding-bottom: 60px;
+    background-image: linear-gradient(to bottom, $basic_white 57.45%, $special_grey-light 57.45% 100%);
 
     br {
       display: none;
@@ -131,7 +131,6 @@
   width: 100%;
   min-height: 57px;
   margin: 0;
-  // margin-bottom: 13px;
   padding: 0;
 
   @media (min-width: $tablet-width) {
@@ -151,7 +150,7 @@
   list-style: none;
   width: 124px;
   height: 56px;
-  border: 1px solid $special_dark-grey;
+  border: 1px solid $special_grey;
   border-radius: 3px;
   text-align: center;
   align-items: center;
@@ -289,10 +288,6 @@
   }
 }
 
-// .example__pictures::before:hover {
-//   background-image: url("../../images/range-hover@2x.png");
-// }
-
 .example__before {
   display: flex;
   width: 100%;
@@ -366,4 +361,3 @@
     }
   }
 }
-

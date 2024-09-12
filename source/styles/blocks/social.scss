@@ -10,7 +10,8 @@
 }
 
 
-.social__link:hover {
+.social__link:hover,
+.social__link:focus {
   background-color: $basic_green;
 }
 
