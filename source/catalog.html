@@ -13,7 +13,7 @@
 </head>
 
 <body class="body">
-  <header class="header">
+  <header class="header" data-test="header">
 
     <a class="header__logo-link" href="#">
       <picture>
@@ -46,11 +46,11 @@
 
   </header>
 
-  <main class="main">
+  <main class="main" data-test="main">
     <div class="main__title-wrapper">
       <h1 class="main__title">Каталог продукции</h1>
     </div>
-    <section class="catalog">
+    <section class="catalog" data-test="catalog">
       <ul class="catalog__list">
         <li class="catalog__item card">
           <a class="card__img-link" href="#">
@@ -111,7 +111,7 @@
           </div>
           <a class="card__button" href="#">ЗАКАЗАТЬ</a>
         </li>
-        <!-- ================================= -->
+
         <li class="catalog__item card">
           <a class="card__img-link" href="#">
             <picture class="card__image">
@@ -141,7 +141,7 @@
           </div>
           <a class="card__button" href="#">ЗАКАЗАТЬ</a>
         </li>
-        <!-- ================================= -->
+
         <li class="catalog__item card">
           <a class="card__img-link" href="#">
             <picture class="card__image">
@@ -171,7 +171,7 @@
           </div>
           <a class="card__button" href="#">ЗАКАЗАТЬ</a>
         </li>
-        <!-- ================================= -->
+
         <li class="catalog__item card">
           <a class="card__img-link" href="#">
             <picture class="card__image">
@@ -202,7 +202,6 @@
           <a class="card__button" href="#">ЗАКАЗАТЬ</a>
         </li>
 
-        <!-- ================================= -->
         <li class="catalog__item card">
           <a class="card__img-link" href="#">
             <picture class="card__image">
@@ -232,7 +231,7 @@
           </div>
           <a class="card__button" href="#">ЗАКАЗАТЬ</a>
         </li>
-        <!-- ================================= -->
+
         <li class="catalog__item card">
           <a class="card__img-link" href="#">
             <picture class="card__image">
@@ -262,7 +261,7 @@
           </div>
           <a class="card__button" href="#">ЗАКАЗАТЬ</a>
         </li>
-        <!-- ================================= -->
+
         <li class="catalog__last-item">
           <img class="catalog__last-item-image" src="images/plus.svg" width="30" height="30" alt="плюс">
           <h3 class="catalog__last-item-title">Показать еще 100500 товаров</h3>
@@ -272,10 +271,9 @@
           <a class="catalog__last-item-button" href="#">ПОКАЗАТЬ ВСЕ</a>
         </li>
       </ul>
-
     </section>
-    <!-- ================================= -->
-    <section class="addition">
+
+    <section class="addition" data-test="addition">
       <div class="addition__title-wrapper">
         <h2 class="addition__title">Дополнительные товары</h2>
       </div>
@@ -314,7 +312,7 @@
       </div>
     </section>
 
-    <section class="subscribe">
+    <section class="subscribe" data-test="subscribe">
       <div class="subscribe__title-wrapper">
         <h2 class="subscribe__title">Акции и новинки</h2>
       </div>
@@ -326,7 +324,7 @@
       </form>
     </section>
 
-    <section class="location">
+    <section class="location" data-test="location">
       <div class="location__advertising">
         <h3 class="location__slogan">ПРИГЛАШАЕМ <br> К СОТРУДНИЧЕСТВУ <br> ДИЛЕРОВ!</h3>
         <div class="location__address-wrapper">
@@ -338,7 +336,7 @@
     </section>
   </main>
 
-  <footer class="footer">
+  <footer class="footer" data-test="footer">
     <div class="footer__container">
       <a class="footer__logo" href="index.html">
         <img src="images/logo-cat-energy.svg" width="128" height="24" alt="логотип компании">
