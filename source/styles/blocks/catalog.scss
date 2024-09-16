@@ -238,3 +238,9 @@
 .catalog__last-item-button:active {
   opacity: 0.3;
 }
+
+
+.catalog__last-item-button:focus {
+  opacity: 0.6;
+  outline: none;
+}

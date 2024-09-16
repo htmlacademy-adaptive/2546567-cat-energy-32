@@ -43,13 +43,13 @@
   font-size: 14px;
 
   @media (min-width: $tablet-width) {
-    width: $tablet-width;
+    width: 708px;
     justify-content: center;
     margin: 0 auto;
   }
 
   @media (min-width: $desktop-width) {
-    width: $desktop-width;
+    width: 1320px;
     margin: 0 auto;
     padding-bottom: 7px;
   }
@@ -159,10 +159,6 @@
     width: 162px;
     height: 72px;
     border-radius: 3px;
-
-    @media (min-width: $desktop-width) {
-      width: 162px;
-    }
   }
 }
 
@@ -172,6 +168,7 @@
   margin: 0 auto;
   padding-top: 13px;
   width: 100%;
+  z-index: 1;
 
   @media (min-width: $tablet-width) {
     font-size: 30px;
@@ -306,24 +303,24 @@
   background-color: $special_grey-light;
   overflow: hidden;
 
-  @media (min-width: $tablet-width) {
-    background-image: linear-gradient(to bottom, $basic_white 30%, $special_grey-light 30% 100%);
-  }
-
-  @media (min-width: $desktop-width) {
-    background-image: linear-gradient(to bottom, $basic_white 23%, $special_grey-light 23% 100%);
-  }
-
   img {
     position: absolute;
     object-fit: cover;
     left: -70px;
+  }
 
-    @media (min-width: $tablet-width) {
+  @media (min-width: $tablet-width) {
+    background-image: linear-gradient(to bottom, $basic_white 30%, $special_grey-light 30% 100%);
+
+    img {
       left: -138px;
     }
+  }
 
-    @media (min-width: $desktop-width) {
+  @media (min-width: $desktop-width) {
+    background-image: linear-gradient(to bottom, $basic_white 23%, $special_grey-light 23% 100%);
+
+    img {
       left: -165px;
     }
   }
@@ -345,18 +342,22 @@
 
   z-index: 10;
 
-  &:hover {
+  &:hover,
+  &:focus {
     background-image: url("../../images/range-hover@2x.png");
+    outline: none;
   }
 
   &:active {
     opacity: 0.6;
   }
 
+
   @media (min-width: $tablet-width) {
     background-image: url("../../images/range-default-tablet@2x.png");
 
-    &:hover {
+    &:hover,
+    &:focus {
       background-image: url("../../images/range-hover-tablet@2x.png");
     }
   }

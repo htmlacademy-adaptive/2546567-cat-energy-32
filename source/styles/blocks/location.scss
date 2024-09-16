@@ -3,9 +3,15 @@
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
+  align-items: flex-start;
   width: 100%;
+  min-height: 474px;
   line-height: 20px;
   background-color: $basic_grey;
+  background-image: url("/images/location@2x.jpg");
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: bottom;
 
   &::before {
     background-image: url("../../icons/marker.svg");
@@ -21,18 +27,24 @@
   }
 
   @media (min-width: $tablet-width) {
+    min-height: 600px;
+    background-image: url("/images/location-tablet@2x.jpg");
+
     &::before {
       width: 113px;
       height: 106px;
-      top: 57.6%;
+      top: 57.4%;
       left: calc(50% - 50px);
     }
   }
 
   @media (min-width: $desktop-width) {
+    min-height: 400px;
+    background-image: url("/images/location-desktop@2x.jpg");
+
     &::before {
-      top: 25%;
-      left: calc(48% - 27px);
+      top: 32.5%;
+      left: calc(65% - 27px);
     }
   }
 }

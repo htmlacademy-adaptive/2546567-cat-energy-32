@@ -23,7 +23,7 @@
     flex-wrap: nowrap;
     justify-content: space-between;
     align-items: center;
-    padding: 56px 31px;
+    padding: 55px 31px;
   }
 
   @media (min-width: $desktop-width) {
@@ -48,7 +48,7 @@
   @media (min-width: $tablet-width) {
     justify-content: flex-start;
     align-items: start;
-    width: 128px;
+    width: 163px;
     margin: 0;
     padding: 0;
     border: none;
@@ -63,6 +63,11 @@
   opacity: 0.3;
 }
 
+.footer__logo:focus {
+  opacity: 0.6;
+  outline: none;
+}
+
 .footer__developer-link {
   display: flex;
   justify-content: space-between;
@@ -73,6 +78,7 @@
   color: $basic-color-text;
   border-top: 1px solid #d9d9d9;
   text-decoration: none;
+  outline: none;
 
   @media (min-width: $tablet-width) {
     padding: 0;
@@ -82,17 +88,25 @@
 }
 
 
-.footer__developer-link:hover {
-  .footer__developer-logo {
-    background-color: $basic_green;
-  }
+.footer__developer-link:hover .footer__developer-logo,
+.footer__developer-link:focus .footer__developer-logo {
+  background-color: $basic_green;
 }
 
 .footer__developer-link:active {
-  .footer__developer-logo {
-    background-color: $basic_green;
-    opacity: 0.3;
-  }
+  opacity: 0.3;
+}
+
+.footer__developer-text:hover {
+  opacity: 0.6;
+}
+
+.footer__developer-text:active {
+  opacity: 0.3;
+}
+
+.footer__developer-text:focus {
+  opacity: 0.6;
 }
 
 .footer__developer-logo {
@@ -109,7 +123,8 @@
 
 .footer__list {
   display: flex;
-  justify-content: space-between;
+  flex-wrap: wrap;
+  width: 132px;
   gap: 24px;
   padding: 0;
   padding-top: 3px;
@@ -118,7 +133,6 @@
 
   @media (min-width: $tablet-width) {
     margin: 0 auto;
-    width: 99px;
     justify-content: space-between;
   }
 }

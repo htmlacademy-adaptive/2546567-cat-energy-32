@@ -51,6 +51,11 @@
   opacity: 0.6;
 }
 
+.header__logo-link:focus {
+  opacity: 0.6;
+  outline: none;
+}
+
 .header__logo-link:active {
   opacity: 0.3;
 }
@@ -60,12 +65,12 @@
 
   @media (min-width: $tablet-width) {
     margin-left: 12px;
+  }
 
-    @media (min-width: $desktop-width) {
-      margin-left: 14px;
-      width: 118px;
-      height: 21px;
-    }
+  @media (min-width: $desktop-width) {
+    margin-left: 14px;
+    width: 118px;
+    height: 21px;
   }
 }
 

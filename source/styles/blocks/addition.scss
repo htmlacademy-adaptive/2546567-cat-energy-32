@@ -286,6 +286,12 @@
 }
 
 
+.addition__item-button:focus {
+  opacity: 0.6;
+  outline: none;
+}
+
+
 .addition__slogan {
   position: relative;
   display: flex;

@@ -27,6 +27,10 @@
   opacity: 0.3;
 }
 
+.form__submit:focus {
+  opacity: 0.6;
+  outline: none;
+}
 
 .form__input {
   display: flex;
@@ -51,4 +55,9 @@
     height: 56px;
     margin-left: 233px;
   }
+}
+
+.form__input:focus {
+  opacity: 0.6;
+  outline: none;
 }
