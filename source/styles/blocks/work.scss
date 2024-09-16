@@ -188,7 +188,7 @@
 .work__item--clock {
   padding-left: 80px;
 
-  br {
+  .work__description-space {
     display: none;
   }
 
@@ -214,7 +214,7 @@
       z-index: 0;
     }
 
-    br {
+    .work__description-space {
       display: block;
     }
   }

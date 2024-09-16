@@ -10,7 +10,7 @@
   background-color: $basic_grey;
   background-image: url("/images/location@2x.jpg");
   background-repeat: no-repeat;
-  background-size: contain;
+  background-size: auto 362px;
   background-position: bottom;
 
   &::before {
@@ -29,6 +29,7 @@
   @media (min-width: $tablet-width) {
     min-height: 600px;
     background-image: url("/images/location-tablet@2x.jpg");
+    background-size: auto 400px;
 
     &::before {
       width: 113px;
@@ -43,10 +44,18 @@
     background-image: url("/images/location-desktop@2x.jpg");
 
     &::before {
-      top: 32.5%;
-      left: calc(65% - 27px);
+      top: 32.6%;
+      transform: translateX(238px);
     }
   }
+}
+
+.location--light {
+  background-color: $basic_white;
+
+  // @media (min-width: $mobile-width-only) {
+  //   background-color: $basic_white;
+  // }
 }
 
 .location__advertising {
