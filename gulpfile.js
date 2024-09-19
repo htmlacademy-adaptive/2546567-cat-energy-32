@@ -154,7 +154,7 @@ export function startServer () {
     notify: false,
     ui: false,
   }, (err, bs) => {
-    bs.addMiddleware('*', (req, res) => {
+    bs?.addMiddleware('*', (req, res) => {
       res.write(readFileSync(`${PATH_TO_DIST}404.html`));
       res.end();
     });
