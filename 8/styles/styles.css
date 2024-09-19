@@ -1117,7 +1117,7 @@ img {
 .work__item--clock {
   padding-left: 80px;
 }
-.work__item--clock br {
+.work__item--clock .work__description-space {
   display: none;
 }
 .work__item--clock::after {
@@ -1141,7 +1141,7 @@ img {
     background-image: url("../icons/stack.svg#four");
     z-index: 0;
   }
-  .work__item--clock br {
+  .work__item--clock .work__description-space {
     display: block;
   }
 }
@@ -1560,7 +1560,7 @@ img {
   background-color: #f2f2f2;
   background-image: url("/images/location@2x.jpg");
   background-repeat: no-repeat;
-  background-size: contain;
+  background-size: auto 362px;
   background-position: bottom;
 }
 .location::before {
@@ -1579,6 +1579,7 @@ img {
   .location {
     min-height: 600px;
     background-image: url("/images/location-tablet@2x.jpg");
+    background-size: auto 400px;
   }
   .location::before {
     width: 113px;
@@ -1593,9 +1594,13 @@ img {
     background-image: url("/images/location-desktop@2x.jpg");
   }
   .location::before {
-    top: 32.5%;
-    left: calc(65% - 27px);
+    top: 32.6%;
+    transform: translateX(238px);
   }
+}
+
+.location--light {
+  background-color: #ffffff;
 }
 
 .location__advertising {
@@ -2819,11 +2824,41 @@ img {
 }
 
 .footer {
+  position: relative;
   display: flex;
   flex-wrap: wrap;
   width: 100%;
   justify-content: center;
   background-color: #f2f2f2;
+  overflow-x: hidden;
+}
+.footer::before {
+  position: absolute;
+  content: "";
+  top: 82px;
+  left: 20px;
+  width: calc(100vw - 40px);
+  height: 1px;
+  background-color: #d9d9d9;
+}
+@media (min-width: 768px) {
+  .footer::before {
+    display: none;
+  }
+}
+.footer::after {
+  position: absolute;
+  content: "";
+  top: 144px;
+  left: 20px;
+  width: calc(100vw - 40px);
+  height: 1px;
+  background-color: #d9d9d9;
+}
+@media (min-width: 768px) {
+  .footer::after {
+    display: none;
+  }
 }
 
 .footer__container {
@@ -2831,7 +2866,6 @@ img {
   flex-wrap: wrap;
   justify-content: center;
   margin: 0 auto;
-  overflow-x: hidden;
   list-style: none;
   padding: 23px 20px;
   width: 320px;
@@ -2863,7 +2897,6 @@ img {
   width: 100%;
   padding-bottom: 18px;
   padding-top: 18px;
-  border-bottom: 1px solid #d9d9d9;
 }
 @media (min-width: 768px) {
   .footer__logo {
@@ -2872,7 +2905,6 @@ img {
     width: 163px;
     margin: 0;
     padding: 0;
-    border: none;
   }
 }
 
@@ -2897,7 +2929,6 @@ img {
   padding: 20px 0;
   cursor: pointer;
   color: #444444;
-  border-top: 1px solid #d9d9d9;
   text-decoration: none;
   outline: none;
 }
@@ -2905,7 +2936,6 @@ img {
   .footer__developer-link {
     padding: 0;
     width: 163px;
-    border: none;
   }
 }
 
