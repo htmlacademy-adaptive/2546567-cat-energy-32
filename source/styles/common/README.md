@@ -10,7 +10,7 @@ _fonts.scss_
 _variables.scss_
 ```scss
 $color-basis: #000000;
-$color-accent: #ffffff;
+$color-accent: $basic_white;
 ```
 
 _global.scss_
